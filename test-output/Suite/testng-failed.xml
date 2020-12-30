@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="password" value="MWqatest0"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://ssp.lmx.ai/login"/>
+  <parameter name="username" value="qatest"/>
+  <test thread-count="5" name="Businessflow(failed)">
+    <classes>
+      <class name="lmxscripts.Salesterms">
+        <methods>
+          <include name="afterTest"/>
+          <include name="setData"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="SmokeTest1"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- lmxscripts.Salesterms -->
+      <class name="lmxscripts.Editbillboard">
+        <methods>
+          <include name="afterTest"/>
+          <include name="setData"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="Editbillboard"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- lmxscripts.Editbillboard -->
+    </classes>
+  </test> <!-- Businessflow(failed) -->
+</suite> <!-- Failed suite [Suite] -->
